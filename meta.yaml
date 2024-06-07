@@ -10,6 +10,7 @@ source:
   sha256: 341077117ef956aaeeb970eaa4d5f2b058990336a4fe1749b7e5c8024d352e0c
 
 build:
+  skip: true  # [win]
   script: bash build_static.sh
   number: 0
 
