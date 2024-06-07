@@ -27,7 +27,7 @@ requirements:
 
 test:
   commands:
-    - kmc --help # [not aarch64]
+    - kmc --help
 
 about:
   home: https://github.com/gkanogiannis/KMC
@@ -38,7 +38,5 @@ about:
     - vendor-licenses/
 
 extra:
-  additional-platforms:
-    - linux-aarch64
   recipe-maintainers:
     - gkanogiannis
