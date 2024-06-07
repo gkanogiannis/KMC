@@ -28,7 +28,9 @@ about:
   home: https://github.com/gkanogiannis/KMC
   summary: 'Fast and frugal disk based k-mer counter. Includes smudge_pairs.'
   license: GPL-3.0-or-later
-  license_file: LICENSE.txt
+  license_file: 
+    - LICENSE.txt
+    - vendor-licenses/
 
 extra:
   recipe-maintainers:
