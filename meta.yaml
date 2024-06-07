@@ -25,6 +25,10 @@ requirements:
   run:
     - python
 
+test:
+  imports:
+    - kmc_smudge_pairs
+
 about:
   home: https://github.com/gkanogiannis/KMC
   summary: 'Fast and frugal disk based k-mer counter. Includes smudge_pairs.'
