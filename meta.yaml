@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/gkanogiannis/KMC/archive/v{{ version }}.tar.gz
-  sha256: 495a8d51267b2e4f0694d270e49edd1e676df5fcae56c151060446dcb4933b2e
+  sha256: 4454cbb4db93337dfa7d0fd18e69036962709f8dc2e1e812c3e8cec4c6978b73
 
 build:
   skip: true  # [win]
