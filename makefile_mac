@@ -8,8 +8,8 @@ KMC_TOOLS_DIR = kmc_tools
 PY_KMC_API_DIR = py_kmc_api
 
 CC = ${CXX}
-CFLAGS	= -Wall -O3 -m64 -static-libgcc -static-libstdc++ -fopenmp -pthread -std=c++11 -stdlib=libstdc++
-CLINK	= -lm -fopenmp -static-libgcc -static-libstdc++ -O3 -pthread -std=c++11 -stdlib=libstdc++
+CFLAGS	= -Wall -O3 -m64 -static-libgcc -static-libstdc++ -fopenmp -pthread -std=c++11 -stdlib=libc++
+CLINK	= -lm -fopenmp -static-libgcc -static-libstdc++ -O3 -pthread -std=c++11 -lc++
 KMC_TOOLS_CFLAGS	= -Wall -O3 -m64 -static-libgcc -static-libstdc++ -pthread -std=c++14
 KMC_TOOLS_CLINK	= -lm -static-libgcc -static-libstdc++ -O3 -pthread -std=c++14
 
