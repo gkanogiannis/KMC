@@ -11,6 +11,7 @@ source:
 
 build:
   skip: true  # [win]
+  script: build_static.sh
   number: 0
 
 requirements:
