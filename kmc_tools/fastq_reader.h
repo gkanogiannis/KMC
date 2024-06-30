@@ -17,8 +17,8 @@
 #include <stdio.h>
 #include <iostream>
 
-#include "libs/zlib.h"
-#include "libs/bzlib.h"
+#include <zlib.h>
+#include <bzlib.h>
 
 
 using namespace std;
