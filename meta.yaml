@@ -11,8 +11,11 @@ source:
 
 build:
   skip: true  # [not linux]
-  script: bash build_static.sh
+  script: bash build_shared.sh
   number: 0
+  run_exports:
+    - zlib
+    - bzip2
 
 requirements:
   build:
@@ -20,9 +23,6 @@ requirements:
     - {{ stdlib("c") }}
     - make
   host:
-    - zlib
-    - bzip2
-  run:
     - zlib
     - bzip2
 

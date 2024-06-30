@@ -3,10 +3,7 @@
 # Check the operating system
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     # Linux
-    make
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-    # macOS
-    make -f makefile_mac
+    make -f makefile_shared
 else
     echo "Unsupported OS: $OSTYPE"
     exit 1
