@@ -33,7 +33,7 @@ $(KMC_MAIN_DIR)/raduls_sse41.o \
 $(KMC_MAIN_DIR)/raduls_avx2.o \
 $(KMC_MAIN_DIR)/raduls_avx.o
 
-KMC_LIBS = -lbz2 -lz
+KMC_LIBS = -lbz2 -lz -lpthread
 
 KMC_UTIL_OBJS = \
 $(KMC_DUMP_DIR)/nc_utils.o
@@ -63,7 +63,7 @@ $(KMC_TOOLS_DIR)/fastq_reader.o \
 $(KMC_TOOLS_DIR)/fastq_writer.o \
 $(KMC_TOOLS_DIR)/percent_progress.o
 
-KMC_TOOLS_LIBS = -lbz2 -lz
+KMC_TOOLS_LIBS = -lbz2 -lz -lpthread
 
 $(KMC_OBJS) $(KMC_DUMP_OBJS) $(KMC_UTIL_OBJS) $(KMC_SMUDGE_OBJS) $(KMC_API_OBJS): %.o: %.cpp
 	$(CC) $(CXXFLAGS) -c $< -o $@
