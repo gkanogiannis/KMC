@@ -8,8 +8,8 @@ KMC_TOOLS_DIR = kmc_tools
 PY_KMC_API_DIR = py_kmc_api
 
 CC 	= ${CXX}
-CXXFLAGS = -fPIC -Wall -O3 -m64 -shared -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -std=c++14
-LDFLAGS = -fPIC -lm -O3 -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -std=c++14
+CXXFLAGS = -fPIC -Wall -O3 -m64 -shared -lbz2 -lz -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -std=c++14
+LDFLAGS = -fPIC -lm -O3 -lbz2 -lz -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -std=c++14
 
 KMC_OBJS = \
 $(KMC_MAIN_DIR)/kmer_counter.o \
