@@ -13,8 +13,7 @@ For accessing k-mers stored in database produced by KMC there is an API (kmc_api
 
 Installation
 =
-The following libraries come with KMC in a binary (64-bit compiled for x86 platform) form.
-If your system needs other binary formats, you should put the following libraries in kmer_counter/libs:
+The following required libraries (and their headers) should be available in your system:
 * libbzip2 - for support for bzip2-compressed input FASTQ/FASTA files (http://www.bzip.org/)
 * zlib - for support for gzip-compressed input FASTQ/FASTA files (http://www.zlib.net/)
 
@@ -28,7 +27,7 @@ necessary, so using large values of MAX_K does not affect the KMC performance fo
 
 Some parts of KMC use C++14 features, so you need a compatible C++ compiler, e.g., gcc 4.9+ or clang 3.4+
 
-After that, you can run make to compile kmc and kmc_dump applications.
+After that, you can run make -f makefile_shared to compile kmc and kmc_dump applications.
 
 ##### Additional infromation for MAC OS installation
 
@@ -92,6 +91,7 @@ After compilation you will obtain two binaries:
 * bin/kmc - the main program for counting k-mer occurrences
 * bin/kmc_dump - the program listing k-mers in a database produced by kmc
 * bin/kmc_tools - the program allowing to manipulate kmc databases (set operations, transformations, etc.)
+* bin/smudge_pairs - the program which finds heterozygous kmer pairs
 
 
 License
