@@ -1,3 +1,9 @@
+Introduction
+=
+This is a fork of KMC (with smudge_pairs) for conda-forge.
+Due to conda-forge rules, the code has being slightly modified to not statically linking zlib and libbzip2.
+Hence these libraries are dynamically linked (shared) and no need to be bundled with this fork.
+
 KMC
 =
 KMC is a disk-based programm for counting k-mers from (possibly gzipped) FASTQ/FASTA files.
